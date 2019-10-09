@@ -15,10 +15,7 @@ class Home extends React.Component {
                 <Link to="/login">
                 <button type="button" class="btn btn-primary">Primary</button>
                 </Link>               
-                </div>
-               
-           
-              
+                </div>          
             </React.Fragment>
         )
     }
