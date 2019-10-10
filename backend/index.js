@@ -31,6 +31,10 @@ const app = express();
 //Routes
 app.use(require('./routes/indexRouter'));
 app.use(require('./routes/usersRouter'));
+app.use(require('./routes/productsRouter'));
+app.use(require('./routes/materialsRouter'));
+app.use(require('./routes/LocationsRouter'));
+app.use(require('./routes/collectsRouter'));
 
 
 
