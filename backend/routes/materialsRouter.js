@@ -5,3 +5,5 @@ const router = Router();
 router.get('/materials', (req, res) => {
     res.send('materials router');
 })
+
+module.exports = router;
