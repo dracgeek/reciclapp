@@ -1,0 +1,9 @@
+*{
+    margin-top: 20px;
+    background: #f1f4f9;
+}
+
+button{
+    font-weight: bold !important;
+    color: #000 !important;
+}
