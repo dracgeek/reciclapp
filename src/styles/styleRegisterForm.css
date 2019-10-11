@@ -1,0 +1,34 @@
+*{
+    background: #f1f4f9;
+    margin-top: 10px;
+}
+
+h3,h6{
+    color:  #3f3f3f;
+    
+}
+
+.title{
+    padding-top:100px ;
+
+}
+
+.btn-siguiente{
+    background-color: #33b924 !important;
+    color: #000 !important;
+    
+}
+.btn-siguiente:hover{
+    background-color: #0d6803c4;    
+}
+
+
+.btn-regresar{
+    background: #3f3f3f !important;
+    color: #f2f2f2 !important;
+}
+
+.btn-regresar:hover{
+    background: #202020 !important;
+    color: #f2f2f2 !important;
+}
