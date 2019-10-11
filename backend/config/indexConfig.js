@@ -2,7 +2,6 @@ require('dotenv').config();
 
 const config = {
     dev: process.env.NODE_ENV !== "production",
-    conect: process.env.DB_CONNECTION,
     port: process.env.PORT,
     dbUser: process.env.DB_USERNAME,
     dbPassword: process.env.DB_PASSWORD,
@@ -11,4 +10,4 @@ const config = {
     dbName: process.env.DB_NAME
 };
 
-module.exports = { config }
+module.exports = { config };
