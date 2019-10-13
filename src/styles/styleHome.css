@@ -1,16 +1,15 @@
+/* Cuando se colocan el * es para que tome esos estilos generales*/
 *{
     margin-top: 20px;
-    background: #f1f4f9;
+    background: #f1f4f9; /* Este color de fondo lo tomara para todas las vistas*/
     
 }
 
 button{
-    background-color: #33b924 !important;
+    background-color: #33b924 !important; /* El color correspondiente al */
     color: #000 !important;
     font-weight: bold !important;
 }
 
-button:hover{
-    background-color: #0d6803c4;    
-}
+
 
