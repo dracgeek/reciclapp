@@ -1,0 +1,19 @@
+*{
+    margin-top: 20px;
+    background-color: #f1f4f9;
+    
+}
+
+h3,p{
+    color: #000;
+}
+
+p{
+    font-size: 20px !important;
+}
+
+button{
+    background-color: #33b924 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+}

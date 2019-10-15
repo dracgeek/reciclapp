@@ -1,0 +1,16 @@
+*{
+    margin-top: 20px;
+    background-color: #f1f4f9;    
+}
+
+
+button{
+    background-color: #33b924 !important;
+    color: #000 !important;
+    font-weight: bold !important;
+}
+
+li{
+    font-size: 20px;
+    color: #000 !important;
+}
