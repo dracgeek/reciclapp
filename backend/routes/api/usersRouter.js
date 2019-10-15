@@ -1,9 +1,7 @@
 const { Router } = require('express');
 const router = Router();
 
-
-
-router.get('/users', (req, res) => {
+router.get('/show', (req, res) => {
     res.send('user router');
 })
 
