@@ -7,6 +7,7 @@ import RegisterForm from './components/RegisterForm';
 import Confirmation from './components/Confirmation';
 import Instructive from './components/Instructive';
 import MaterialScanner from './components/MaterialScanner';
+import Prueba from './components/Prueba';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
          <Route exact path="/confirmation" component={Confirmation}/>
          <Route exact path="/instructive" component={Instructive}/>
          <Route exact path="/MaterialScanner" component={MaterialScanner}/>
+         <Route exact path="/Prueba" component={Prueba}/>
+         
 
          </Switch>
    
