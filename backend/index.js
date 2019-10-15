@@ -1,43 +1,33 @@
+/* Conexion de la BD traida al index.js */
+const { database } = require('./lib/dbConnect');
+/* -------------------------------------------- */
+
 const express = require('express');
-const bodyParser = require('body-parser');
-
-
-
+const cors = require('cors');
 
 //Initializations
 const app = express();
 
-
-
-
-//Setting
-
-
-
+//Settings
+app.set('port', process.env.PORT || 4000);
 
 //Middlewares
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
-
-
+app.use(cors());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 //Global Variables
 
-
-
-
-
-
-
 //Routes
-app.use('api', require('./routes/indexRouter'));
-app.use('api', require('./routes/usersRouter'));
-app.use('api', require('./routes/productsRouter'));
-app.use('api', require('./routes/materialsRouter'));
-app.use('api', require('./routes/LocationsRouter'));
-app.use('api', require('./routes/collectsRouter'));
+app.use('/api', require('./routes/api/indexRouter'));
+app.use('/api/users', require('./routes/api/usersRouter'));
+app.use('/api/usersForm', require('./routes/api/usersForm'));
+app.use('/api/products', require('./routes/api/productsRouter'));
+app.use('/api/materials', require('./routes/api/materialsRouter'));
+app.use('/api/locations', require('./routes/api/LocationsRouter'));
+app.use('/api/collects', require('./routes/api/collectsRouter'));
 
-
-
-
-//Static Files
+// Starting The Server
+app.listen(app.get('port'), () => {
+  console.log(`Server on port ${app.get('port')}`);
+});
