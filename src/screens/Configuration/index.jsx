@@ -8,11 +8,11 @@ export class index extends PureComponent {
                 <div class="form-row">
                     <div class="col-md-4 mb-3">
                         <label for="validationDefault01">First name</label>
-                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name" required />
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="First name"/>
                     </div>
                     <div class=" mb-3">
                         <label for="validationDefault02">Last name</label>
-                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" required />
+                        <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" />
                     </div>
                     <div class="col-md-4 mb-3">
                         <label for="validationDefaultUsername">Username</label>

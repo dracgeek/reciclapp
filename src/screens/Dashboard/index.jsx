@@ -17,42 +17,42 @@ class index extends PureComponent {
         <div className="col-12 col-xl-8">
 
 
-          <div class="card">
-            <div class="card-header">
-              <div class="row align-items-center">
-                <div class="col">
+          <div className="card">
+            <div className="card-header">
+              <div className="row align-items-center">
+                <div className="col">
 
 
-                  <h4 class="card-header-title">
+                  <h4 className="card-header-title">
                     Orders
       </h4>
 
                 </div>
-                <div class="col-auto mr-n3">
+                <div className="col-auto mr-n3">
 
 
-                  <span class="text-muted">
+                  <span className="text-muted">
                     Show affiliate:
       </span>
 
                 </div>
-                <div class="col-auto">
+                <div className="col-auto">
 
 
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="cardToggle" data-toggle="chart" data-target="#ordersChart" data-add="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[15,10,20,12,7,0,8,16,18,16,10,22],&quot;backgroundColor&quot;:&quot;#d2ddec&quot;,&quot;label&quot;:&quot;Affiliate&quot;}]}}" />
-                    <label class="custom-control-label" for="cardToggle"></label>
+                  <div className="custom-control custom-switch">
+                    <input type="checkbox" className="custom-control-input" id="cardToggle" data-toggle="chart" data-target="#ordersChart" data-add="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[15,10,20,12,7,0,8,16,18,16,10,22],&quot;backgroundColor&quot;:&quot;#d2ddec&quot;,&quot;label&quot;:&quot;Affiliate&quot;}]}}" />
+                    <label className="custom-control-label" for="cardToggle"></label>
                   </div>
 
                 </div>
               </div>
 
             </div>
-            <div class="card-body">
+            <div className="card-body">
 
 
-              <div class="chart"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                <canvas id="ordersChart" class="chart-canvas chartjs-render-monitor" width="492" height="300" ></canvas>
+              <div className="chart"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className=""></div></div><div className="chartjs-size-monitor-shrink"><div className=""></div></div></div>
+                <canvas id="ordersChart" className="chart-canvas chartjs-render-monitor" width="492" height="300" ></canvas>
               </div>
 
             </div>

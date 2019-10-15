@@ -6,27 +6,31 @@ import Users from './screens/Users';
 import Configuration from './screens/Configuration';
 import Signin from './screens/Signin';
 import Signup from './screens/Signup';
-// import Header from './common/components/Header';
+import Header from './common/components/Header';
 import Sidenav from "./common/components/Sidenav";
-import Input from "./screens/Input";
-
+import QRcode from "./screens/QRcode";
+import Date from "./screens/Date";
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
-      <div class="row">
-        <div class="col">
+      
           <Sidenav/>
-        </div>
-        <div class="col-10">
+
+      <div class="row">
+        {/* <div class="col"> 
+          
+         </div> */}
+        <div class="col">
+        <Header />
         <Switch>
           <Route exact path="/" component={Dashboard} />   
           <Route exact path="/Signup" component={Signup} />  
           <Route exact path="/Signin" component={Signin} />  
-          <Route exact path="/Input" component={Input} /> 
           <Route exact path="/Configuration" component={Configuration} />   
           <Route exact path="/Users" component={Users} />
+          <Route exact path="/QRcode" component={QRcode} />
+          <Route exact path="/Date" component={Date} />   
         </Switch>
         </div>
       </div>

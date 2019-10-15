@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@trendmicro/react-sidenav": "^0.4.5",
     "bootstrap": "4.3.1",
     "jquery": "3.4.1",
     "popper.js": "1.15.0",
-    "react": "16.10.2",
+    "react": "^16.10.2",
     "react-dom": "16.10.2",
+    "react-qr-svg": "^2.2.1",
     "react-router-dom": "5.1.2",
     "react-scripts": "3.2.0"
   },
