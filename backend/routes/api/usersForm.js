@@ -4,27 +4,27 @@ const router = Router();
 /* Hace referencia a la conexion de la BD */
 const poolConnection = require('../../lib/dbConnect');
 
-router.get('/typeDocuments', async(req, res, next) => {
+router.get('/typeDocuments', async (req, res, next) => {
     const documents = await poolConnection.query('SELECT * FROM documents');
     res.send(documents);
 });
 
-router.get('/neighborhoods', async(req, res, next) => {
+router.get('/neighborhoods', async (req, res, next) => {
     const neighborhoods = await poolConnection.query('SELECT * FROM neighborhoods');
     res.send(neighborhoods);
 });
 
-router.get('/houses', async(req, res, next) => {
+router.get('/houses', async (req, res, next) => {
     const houses = await poolConnection.query('SELECT * FROM houses');
     res.send(houses);
 });
 
 router.post('/create', async (req, res, next) => {
     let { fullName, numberDocument, mobilePhone, email, addressHome, membersHome,
-         document_id, neighborhood_id, house_id } = req.body;
+        document_id, neighborhood_id, house_id } = req.body;
 
-         /* Este espacio es para realizar las validaciones de los datos
-         antes de que entren o lleguen a la base de datos */
+    /* Este espacio es para realizar las validaciones de los datos
+    antes de que entren o lleguen a la base de datos */
 
     const newUser = {
         fullName,
@@ -41,10 +41,9 @@ router.post('/create', async (req, res, next) => {
     }
 
     await poolConnection.query('INSERT INTO users SET ?', [newUser]);
-    // req.flash('success', 'Ingrediente Creado Correctamente');
 });
 
-router.get('/', async(req, res, next) => {
+router.get('/', async (req, res, next) => {
     const documents = await poolConnection.query('SELECT * FROM users');
     res.send(documents);
 });

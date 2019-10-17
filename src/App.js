@@ -14,19 +14,19 @@ import Prueba from './components/Prueba';
 function App() {
   return (
     <BrowserRouter>
-         <Switch>
-         <Route exact path="/" component={Home} />
-         <Route exact path="/login" component={Login} />
-         <Route exact path="/registerone" component={RegisterOne}/>
-         <Route exact path="/registerform" component={RegisterForm}/>
-         <Route exact path="/confirmation" component={Confirmation}/>
-         <Route exact path="/instructive" component={Instructive}/>
-         <Route exact path="/MaterialScanner" component={MaterialScanner}/>
-         <Route exact path="/Prueba" component={Prueba}/>
-         
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/registerone" component={RegisterOne} />
+        <Route exact path="/registerform" component={RegisterForm} />
+        <Route exact path="/confirmation" component={Confirmation} />
+        <Route exact path="/instructive" component={Instructive} />
+        <Route exact path="/MaterialScanner" component={MaterialScanner} />
+        <Route exact path="/Prueba" component={Prueba} />
 
-         </Switch>
-     </BrowserRouter>
+
+      </Switch>
+    </BrowserRouter>
   );
 }
 

@@ -2,6 +2,8 @@
 const { database } = require('./lib/dbConnect');
 /* -------------------------------------------- */
 
+
+
 const express = require('express');
 const cors = require('cors');
 
@@ -16,7 +18,14 @@ app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+
+
+
 //Global Variables
+app.use((req, res, next) => {
+  app.locals.success = req.flash('success');
+})
+
 
 //Routes
 app.use('/api', require('./routes/api/indexRouter'));
