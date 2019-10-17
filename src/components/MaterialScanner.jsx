@@ -1,85 +1,85 @@
 import React from "react";
 import QrReader from "react-qr-scanner";
 import { Link } from "react-router-dom";
+import Scanner from "../components/Scanner"
 import '../styles/styleMaterialScanner.css';
 
 class MaterialScanner extends React.Component {
-    state ={
-        result:'Escanear Producto'
-    }
-    /* Función de Captura*/
-    handleScan = data =>{
-        if(data){
-            this.setState({
-                result: data
-            })
-        }
-    }
-    handleError = err =>{
-        console.error(err)
-    }
-    render () {
+    
+  constructor(props){
+    super(props);
+    this._onBarcodeDetect = this._onBarcodeDetect.bind(this)
+  }
+
+  _onBarcodeDetect(barcode){
+    this.props.process(barcode)
+  }
+    render() {
         return (
-            <div className="container">
+          <React.Fragment>
+             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <form action="">
-                            <div className="form-group col-12 col-md-6 d-flex justify-content-center">
-                                <Link to='/'>
+                        <div className="row">
+                            <div className="col-12 col-md-6">
+                                <Link to='/registerform'>
                                     <img src="../../document/logo.jpg" className="logo" alt=""/>
-                                </Link>
+                                </Link>  
+                            </div>
                             
+                            <div className="col-12 d-flex align-items-center justify-content-center">
+                                <h3>Material a Reciclar</h3>
                             </div>
-                            <div className="form-group row d-flex justify-content-center mb-0 video">
-                                <QrReader
-                                    delay={300}
-                                    onError={this.handleError}
-                                    onScan={this.handleScan}
-                                    style={{width: '100%',height:'70%',}}
-                                    resolution={600}
-                                />
+                        </div>
+                        <form action="">
+                            <div className="form-group row">
+                                <div className="col col-12">
+                                    <h6>Codigo de Barra</h6>
+                                    <input type="number" placeholder="codigo de barra" className="form-control"/>
+                                </div>
                             </div>
-                            <div className="row form-group d-flex justify-content-center mt-0">
-                                <p>{this.state.result}</p> 
-                            </div>
-                            <div className="row form-group d-flex justify-content-center">
-                                <div className="col-12 col-md-6">
+                            <div className="form-group row">
+                                <div className="col col-12">
                                     <h6>Tipo de Material</h6>
-                                    <select type="text" name="materialtype" id="">
-                                        <option value="">Plastico</option>
+                                    <select name="text" id="" className="form-control">
                                         <option value="">Carton</option>
-                                        <option value="">Aluminio</option>
-                                        <option value="">Vidrio</option>
-                                        <option value="">Ordinario</option>
+                                        <option value="">Plastico</option>
+
                                     </select>
                                 </div>
                             </div>
-                            <div className="row form-group d-flex justify-content-center">
-                                <div className="col-12 col-md-6">
+                            <div className="form-group row">
+                                <div className="col col-12 ">
                                     <h6>Cantidad de Material</h6>
-                                    <select type="number" name="materialaccount" id="">
-                                        <option value="">1</option>
-                                        <option value="">2</option>
-                                        <option value="">3</option>
-                                        <option value="">4</option>
-                                        <option value="">5</option>
-                                    </select>
+                                    <input type="number" id="" className="form-control" min="0" max="1000"/>
                                 </div>
                             </div>
-                            <div className="form-group row d-flex justify-content-center">
-                                <Link to='/'> 
-                                    <button type="submit" className="form-control btn btn-lg btn-regresar" name="Regresar">Home</button>
+                            <div className="form-group row d-flex mb-4 justify-content-center">
+                                <Link to='/Scanner'> 
+                                    <button type="button" className="form-control btn btn-lg btn-escanear" name="Escanear Nuevamente">Escanear Nuevamente</button>
                                 </Link>
-                                <Link to='/Confirmation'>
-                                    <button type="submit" className="form-control btn btn-lg btn-siguiente" name="Siguiente">Siguiente</button>
+                                <Link to='/tostore'> 
+                                    <button type="button" className="form-control btn btn-lg btn-almacenar" name="Almacenar Nuevamente">Almacenar</button>
                                 </Link>
                             </div>
                         </form>
                     </div>
                 </div>
+<<<<<<< HEAD
             </div>
+=======
+             </div>  
+          </React.Fragment>
+>>>>>>> 0772be345dc809c85f2b656baa240f4bc18dbe54
         )
     }
+ 
 }
 
+<<<<<<< HEAD
 export default MaterialScanner;
+=======
+
+
+export default MaterialScanner
+>>>>>>> 0772be345dc809c85f2b656baa240f4bc18dbe54

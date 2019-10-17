@@ -37,7 +37,7 @@ class Instructive extends React.Component {
                                 <Link to='/Login'> 
                                     <button type="submit" className="form-control btn btn-lg btn-regresar" name="Regresar">Regresar</button>
                                 </Link>
-                                <Link to='/MaterialScanner'>
+                                <Link to='/ScannerModel'>
                                     <button type="submit" className="form-control btn btn-lg btn-siguiente" name="Siguiente">Siguiente</button>
                                 </Link>
                             </div>  
