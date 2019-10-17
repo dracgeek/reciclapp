@@ -1,7 +1,5 @@
 import React from "react";
-// import QrReader from "react-qr-scanner";
 import { Link } from "react-router-dom";
-// import Scanner from "../components/Scanner"
 import "../styles/styleMaterialScanner.css";
 
 class MaterialScanner extends React.Component {

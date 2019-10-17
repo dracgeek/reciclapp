@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
-// import QrReader from "react-qr-scanner";
 import "../styles/styleScanner.css";
 import Quagga from "quagga";
+import { Link } from "react-router-dom";
 
 class Scanner extends Component {
   constructor(props) {
@@ -9,7 +9,6 @@ class Scanner extends Component {
     this.state = {
       nocamera: false
     };
-    // this.onDetect = this.onDetect.bind(this);
   }
 
   componentDidMount() {
@@ -40,23 +39,37 @@ class Scanner extends Component {
     );
     Quagga.onDetected(data => {
       console.log(data);
+      document.querySelector("#codigo").innerHTML = data.codeResult.code;
     });
   }
-
-  // onDetect(data, res) {
-  //   console.log(data);
-  //   Quagga.stop();
-  //   Quagga.offProcessed();
-  //   this.props.onBarcodeDetect(res.codeResult.code);
-  // }
 
   render() {
     return (
       <Fragment>
-        <div d-flex justify-content-center>
-          <h4>ESCANER</h4>
+        <div id="codigo" className="container mx-auto"></div>
+        <div className="container p-4">
+          <div className="row ">
+            <div className="col mt-5 d-flex align-items-center justify-content-center flex-column">
+              <h4>ESCANEAR CÓDIGO BARRAS</h4>
+              <div id="barcodeScan"></div>
+            </div>
+          </div>
         </div>
-        <div id="barcodeScan"></div>
+        <div className="container mb-4">
+          <div className="row">
+            <div className="col">
+              <Link to="/MaterialScanner">
+                <button
+                  type="button"
+                  className="btn-lg btn-primary"
+                  name="Almacenar Nuevamente"
+                >
+                  Siguiente
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
       </Fragment>
     );
   }

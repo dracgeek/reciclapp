@@ -1,20 +1,18 @@
-*{
+* {
   margin-top: 20px;
   background-color: #f1f4f9;
-    
+
 }
 
 video {
-  width: calc(50%);
-  height: calc(50%);
-  margin-left: 100px;
+  width: calc(70%);
+  height: calc(70%);
+  margin-left: 50px;
   margin-top: 50px;
+  border-radius: 10px;
 }
 
-canvas{
-  width: calc(50%);
-  height: calc(50%);
+canvas {
+  width: calc(10%);
+  height: calc(10%);
 }
-
-
-
