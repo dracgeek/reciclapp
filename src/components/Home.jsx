@@ -18,7 +18,7 @@ class Home extends React.Component {
                            <Link to="/login">
                                 <button type="submit" className="btn btn-lg btn-login mb-4">INICIAR SESION</button>
                            </Link>
-                           <Link to="/RegisterOne">
+                           <Link to="/RegisterForm">
                                 <button type="submit" className="btn btn-lg btn-signup">REGISTRARSE</button>
                            </Link>
                         </div>
