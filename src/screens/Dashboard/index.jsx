@@ -1,70 +1,61 @@
 import React, { PureComponent } from "react";
 // import { Link } from "react-router-dom";
+import {
+  LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, 
+} from 'recharts';
 
+const data = [
+  {
+    name: 'Enero', uv: 4000, Material_mes: 1000, amt: 2400,
+  },
+  {
+    name: 'Febrero', uv: 3000, Material_mes: 1398, amt: 2210,
+  },
+  {
+    name: 'Marzo', uv: 2000, Material_mes: 1400, amt: 2290,
+  },
+  {
+    name: 'Abril', uv: 2780, Material_mes: 2908, amt: 2000,
+  },
+  {
+    name: 'Mayo', uv: 1890, Material_mes: 3800, amt: 2181,
+  },
+  {
+    name: 'Junio', uv: 2390, Material_mes: 4300, amt: 2500,
+  },
+  {
+    name: 'Julio', uv: 3490, Material_mes: 4900, amt: 2100,
+  },
+];
 class index extends PureComponent {
+  
+
   render() {
     return (
-      /*   <React.Fragment>
-            <div className="container">
-              Hola Mundo 
-              <Link to="/login">
-              <button type="button" class="btn btn-primary">Primary</button>
-              </Link>               
-            </div>          
-        </React.Fragment> */
-      <div className="container mt-3">
-
-        <div className="col-12 col-xl-8">
-
-
-          <div className="card">
-            <div className="card-header">
-              <div className="row align-items-center">
-                <div className="col">
-
-
-                  <h4 className="card-header-title">
-                    Orders
-      </h4>
-
-                </div>
-                <div className="col-auto mr-n3">
-
-
-                  <span className="text-muted">
-                    Show affiliate:
-      </span>
-
-                </div>
-                <div className="col-auto">
-
-
-                  <div className="custom-control custom-switch">
-                    <input type="checkbox" className="custom-control-input" id="cardToggle" data-toggle="chart" data-target="#ordersChart" data-add="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[15,10,20,12,7,0,8,16,18,16,10,22],&quot;backgroundColor&quot;:&quot;#d2ddec&quot;,&quot;label&quot;:&quot;Affiliate&quot;}]}}" />
-                    <label className="custom-control-label" for="cardToggle"></label>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-            <div className="card-body">
-
-
-              <div className="chart"><div className="chartjs-size-monitor"><div className="chartjs-size-monitor-expand"><div className=""></div></div><div className="chartjs-size-monitor-shrink"><div className=""></div></div></div>
-                <canvas id="ordersChart" className="chart-canvas chartjs-render-monitor" width="492" height="300" ></canvas>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
+      <div className="container mt-5">
+         <h4>Reciclaje</h4>
+         <br></br>
+        <LineChart
+        width={700}
+        height={300}
+        data={data}
+        margin={{
+          top: 5, right: 30, left: 20, bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Line type="monotone" dataKey="Material_mes" stroke="#55db3d" activeDot={{ r: 8 }} />
+        
+      </LineChart>
+      
       </div>
-
-
-    )
+    );
   }
 }
+
 
 export default index;

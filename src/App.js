@@ -9,18 +9,18 @@ import Signup from './screens/Signup';
 import Header from './common/components/Header';
 import Sidenav from "./common/components/Sidenav";
 import QRcode from "./screens/QRcode";
-import Date from "./screens/Date";
+import Appointment from "./screens/Appointment";
 
 function App() {
   return (
     <BrowserRouter>
       
-          <Sidenav/>
-
-      <div class="row">
-        {/* <div class="col"> 
           
-         </div> */}
+      <Sidenav/>
+      <div class="row">
+         {/* <div class="col"> 
+         
+         </div>  */}
         <div class="col">
         <Header />
         <Switch>
@@ -30,7 +30,7 @@ function App() {
           <Route exact path="/Configuration" component={Configuration} />   
           <Route exact path="/Users" component={Users} />
           <Route exact path="/QRcode" component={QRcode} />
-          <Route exact path="/Date" component={Date} />   
+          <Route exact path="/Appointment" component={Appointment} />   
         </Switch>
         </div>
       </div>
