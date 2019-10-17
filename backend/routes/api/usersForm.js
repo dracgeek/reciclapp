@@ -39,15 +39,8 @@ router.post('/create', async (req, res, next) => {
         // user_id: req.user.id //aqui toma la session del usuario
         // que se definio de forma global.
     }
-
     await poolConnection.query('INSERT INTO users SET ?', [newUser]);
     // req.flash('success', 'Ingrediente Creado Correctamente');
 });
-
-router.get('/', async(req, res, next) => {
-    const documents = await poolConnection.query('SELECT * FROM users');
-    res.send(documents);
-});
-
 
 module.exports = router;

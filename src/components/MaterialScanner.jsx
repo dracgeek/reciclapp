@@ -3,7 +3,6 @@ import QrReader from "react-qr-scanner";
 import { Link } from "react-router-dom";
 import '../styles/styleMaterialScanner.css';
 
-
 class MaterialScanner extends React.Component {
     state ={
         result:'Escanear Producto'
@@ -75,14 +74,12 @@ class MaterialScanner extends React.Component {
                                     <button type="submit" className="form-control btn btn-lg btn-siguiente" name="Siguiente">Siguiente</button>
                                 </Link>
                             </div>
-                        </form>    
+                        </form>
                     </div>
-                </div>            
+                </div>
             </div>
         )
     }
 }
-
-
 
 export default MaterialScanner;

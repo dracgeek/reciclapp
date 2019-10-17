@@ -23,8 +23,6 @@ function App() {
          <Route exact path="/instructive" component={Instructive}/>
          <Route exact path="/MaterialScanner" component={MaterialScanner}/>
          <Route exact path="/Prueba" component={Prueba}/>
-         
-
          </Switch>
      </BrowserRouter>
   );

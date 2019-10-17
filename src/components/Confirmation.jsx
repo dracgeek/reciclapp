@@ -9,7 +9,7 @@ class Confirmation extends React.Component {
 
     render () {
         return (
-            <React.Fragment>   
+            <React.Fragment>
                 <div className="container">
                     <div className="row">
                         <div className="col">
