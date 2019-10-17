@@ -2,7 +2,6 @@
   "name": "reciclapp",
   "version": "0.1.0",
   "private": true,
-  "description": "",
     "engines": {
         "node": "v12.6.0"
     },
@@ -33,10 +32,7 @@
   "scripts": {
     "dev": "nodemon ./backend/index.js",
     "start":"node ./backend/index.js",
-    "start1": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "starting": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"

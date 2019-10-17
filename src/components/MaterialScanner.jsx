@@ -65,21 +65,10 @@ class MaterialScanner extends React.Component {
                         </form>
                     </div>
                 </div>
-<<<<<<< HEAD
             </div>
-=======
-             </div>  
           </React.Fragment>
->>>>>>> 0772be345dc809c85f2b656baa240f4bc18dbe54
         )
     }
- 
 }
 
-<<<<<<< HEAD
 export default MaterialScanner;
-=======
-
-
-export default MaterialScanner
->>>>>>> 0772be345dc809c85f2b656baa240f4bc18dbe54
