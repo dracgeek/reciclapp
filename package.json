@@ -31,8 +31,7 @@
   },
   "scripts": {
     "dev": "nodemon ./backend/index.js",
-    "start":"node ./backend/index.js",
-    "starting": "react-scripts start"
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
