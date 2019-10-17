@@ -17,7 +17,7 @@ class index extends PureComponent {
             <label>
               <input type="checkbox" value="remember-me" /> Remember me
     </label>
-          </div>
+          </div>n
           <button className="btn btn-primary " type="submit">Sign in</button>
           <h6 className="mt-4">Not registered?</h6>
           <Link to="/Signup">
