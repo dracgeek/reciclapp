@@ -1,5 +1,8 @@
-## Reciclapp 
+# Reciclapp 
 Aplicación pensada para solventar los problemas que se presentan en nuestro pais a la hora de reciclar.
+
+## Tecnologias utilizadas
+<strong>ReactJS, NodeJS, MySql </strong>
 
 ## Home 
 
