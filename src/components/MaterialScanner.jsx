@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import "../styles/styleMaterialScanner.css";
+=======
+import Scanner from "../components/Scanner"
+import '../styles/styleMaterialScanner.css';
+>>>>>>> 8b7f923a0e133efa4541456b2a8a37c21629c98c
 
 class MaterialScanner extends React.Component {
   constructor(props) {
@@ -64,6 +69,7 @@ class MaterialScanner extends React.Component {
                     />
                   </div>
                 </div>
+<<<<<<< HEAD
                 <div className="form-group row d-flex mb-4 justify-content-center">
                   <Link to="/Scanner">
                     <button
@@ -94,3 +100,12 @@ class MaterialScanner extends React.Component {
 }
 
 export default MaterialScanner;
+=======
+            </div>
+          </React.Fragment>
+        )
+    }
+}
+
+export default MaterialScanner;
+>>>>>>> 8b7f923a0e133efa4541456b2a8a37c21629c98c

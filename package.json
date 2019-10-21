@@ -2,14 +2,25 @@
   "name": "reciclapp",
   "version": "0.1.0",
   "private": true,
+    "engines": {
+        "node": "v12.6.0"
+    },
   "dependencies": {
     "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^4.3.1",
+    "connect-flash": "^0.1.1",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "express-mysql-session": "^2.1.0",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.2.0",
     "jquery": "^3.4.1",
+    "morgan": "^1.9.1",
     "mysql": "^2.17.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "popper.js": "^1.15.0",
     "quagga": "^0.12.1",
     "react": "^16.10.2",
@@ -20,10 +31,7 @@
   },
   "scripts": {
     "dev": "nodemon ./backend/index.js",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"

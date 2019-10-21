@@ -25,9 +25,8 @@ function App() {
          <Route exact path="/instructive" component={Instructive}/>
          <Route exact path="/ScannerModel" component={ScannerModel}/>
          <Route exact path="/Scanner" component={Scanner}/>
-         <Route exact path="/MaterialScanner" component={MaterialScanner}/>
+         <Route exact path="/MaterialScanner" component={MaterialScanner}/>         
          <Route exact path="/Tostore" component={Tostore} />
-
          </Switch>
      </BrowserRouter>
   );
